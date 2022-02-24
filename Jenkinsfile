@@ -30,7 +30,7 @@ pipeline {
              }
         }
          stage("Docker push") {
-             steps { docker -H 192.168.33.11:4243 run hello-world
+             steps {
                   sh "docker -H 192.168.33.11:4243 run -d -p8888:8080 --name=famms_app gousindevops/ecommerce_app1"
              }
          }
