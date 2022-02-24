@@ -26,7 +26,7 @@ public class FammsApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		categoryRepository.save(new Category(null,"Man & Women Clothes","very trend fashion",null));
 		categoryRepository.save(new Category(null,"ELectronic Devices","Ultimate high devices",null));
-		categoryRepository.save(new Category(null,"Jewellery accessories","shine jewelleries just for you guys",null));
+		categoryRepository.save(new Category(null,"Jewellery accessories","shine jewelleries just for you guys ",null));
 		categoryRepository.save(new Category(null,"Hiiiiiiiii awasome","just trying to figure out that thing",null));
 		Random rnd= new Random();
 		categoryRepository.findAll().forEach(c->{
