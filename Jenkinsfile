@@ -15,7 +15,7 @@ pipeline {
         }
          stage("Docker build") {
             steps {
-                 sh "docker build -t gousindevops/taxeApp ."
+                 sh "docker build -t gousindevops/ecommerce_app1 ."
              }
         }
         stage("Login to Dockerhub"){
@@ -26,7 +26,7 @@ pipeline {
 
         stage("Docker push") {
             steps {
-                 sh "docker push gousindevops/taxeApp"
+                 sh "docker push gousindevops/ecommerce_app1"
              }
         }
     }
