@@ -28,6 +28,8 @@ public class FammsApplication implements CommandLineRunner {
 		categoryRepository.save(new Category(null,"ELectronic Devices","Ultimate high devices",null));
 		categoryRepository.save(new Category(null,"Jewellery accessories","shine jewelleries just for you guys ",null));
 		categoryRepository.save(new Category(null,"Hiiiiiiiii awasome","just trying to figure out that thing",null));
+		categoryRepository.save(new Category(null,"Okayyyyyyyyyyy coooooool","just trying to figure out that thing",null));
+
 		Random rnd= new Random();
 		categoryRepository.findAll().forEach(c->{
 			for (int i=0; i<10; i++)
