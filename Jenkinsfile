@@ -31,6 +31,7 @@ pipeline {
         }
          stage("Docker run") {
              steps {
+                  sh "docker -H 192.168.33.11:4243 rmi gousindevops/ecommerce_app1"
                   sh "docker -H 192.168.33.11:4243 run -d -p8888:8080 --name=famms_app gousindevops/ecommerce_app1"
              }
          }
